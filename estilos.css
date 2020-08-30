@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 90%;
+  height: 800px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 7%;
+  box-shadow: 5px 5px 5px;
+  border-style: inset;
+}
+
+main div {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+main div label {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+div label:before {
+  content: "* ";
+}
+
+main div label input {
+  display: block;
+  width: 80%;
+  height: 35px;
+  border: 2px outset;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 800;
+}
+
+::-webkit-input-placeholder {
+  color: #a075a0;
+  text-align: center;
+  font-weight: 200;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 2px;
+}
+
+/********** Primer renglon **********/
+main div.contenedor-doble {
+  margin-top: 3%;
+}
+
+main div.contenedor-doble :last-child input {
+  width: 50%;
+  margin-left: 0%;
+}
+
+main div.contenedor-doble :last-child label {
+  margin-left: 10%;
+}
+
+/********** Segundo renglon **********/
+.nac-direc {
+  margin-top: 3%;
+}
+
+.input-peques input {
+  width: 85%;
+}
+
+/********** Tercer renglon **********/
+
+.cu-co-te {
+  margin-top: 3%;
+}
+
+.cu-co-te div {
+  display: flex;
+  margin-left: 0;
+}
+
+.cu-co-te input {
+  margin-right: 2%;
+}
+
+.cu-co-te div :first-child {
+  width: 30%;
+}
+
+.cu-co-te div :last-child {
+  width: 30%;
+}
+
+#tel {
+  width: 60%;
+}
+
+/********** Cuarta renglon **********/
+.ce-adj-in {
+  margin-top: 3%;
+}
+
+.ce-adj-in div {
+  display: flex;
+  margin-left: 0;
+}
+
+.ce-adj-in div :first-child {
+  width: 30%;
+  margin-right: 2%;
+  padding-left: 8%;
+}
+
+.ce-adj-in div label {
+  margin-left: 0;
+  margin-right: 2%;
+}
+.ce-adj-in label input {
+  padding: 0;
+}
+
+#in-tele {
+  width: 50%;
+  padding-left: 10%;
+}
+
+/********** Quinta renglon **********/
+
+.comentario {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comentario label {
+  margin-left: 20%;
+  font-size: 17px;
+}
+
+/********** Comentario **********/
+
+textarea {
+  width: 60%;
+  height: 150px;
+  margin: auto;
+  padding: 2%;
+  margin-bottom: 3%;
+  border: 2px outset;
+}
+/********** Boton enviar **********/
+#enviar {
+  width: 35%;
+  height: 35px;
+  margin: auto;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+}

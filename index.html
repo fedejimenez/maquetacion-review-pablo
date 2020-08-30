@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <form method="post" action="" enctype="multipart/form-data">
+      <h1>Inscripcion a Teletrabajo</h1>
+
+      <!---------- Primera sección ---------->
+      <div class="contenedor-doble">
+        <label for="nombre">Nombre
+          <input type="text" placeholder="Ej: Tomas" id="nombre" name="nombre" required>
+        </label>
+        <label for="apellido">Apellido
+          <input type="text" placeholder="Ej: Lezana" id="apellido" name="apellido" required>
+        </label>
+
+        <label for="nac">Fecha de nacimiento
+          <input type="date" name="nacimiento" id="nac" required>
+        </label>
+      </div>
+
+
+      <!---------- Segunda sección ---------->
+      <div class="nac-direc">
+        <label for="provincia">Provincia
+          <input type="text" id="provincia" name="provincia" placeholder="EJ: Buenos Aires" required>
+        </label>
+
+        <label for="localidad">Localidad
+          <input type="text" id="localidad" name="localidad" placeholder="EJ: Varela" required>
+        </label>
+
+        <label for="direc">Direccion
+          <input type="text" placeholder="Ej: Av.Los Quilmes" id="direc" name="direccion" required>
+        </label>
+
+
+        <div class="input-peques">
+          <label for="num">N°
+            <input type="number" id="num" name="numero" placeholder="EJ: 895" max="5000" required>
+          </label>
+
+          <label for="piso">Piso
+            <input type="number" id="piso" name="piso" name="piso" placeholder="EJ: 4" max="20" required>
+          </label>
+
+          <label for="dep">Departamento
+            <input type="text" id="dep" name="departamento" placeholder="Ej: 5B" maxlength="3" required>
+          </label>
+        </div>
+      </div>
+
+      <!---------- Tercera sección ---------->
+      <div class="cu-co-te">
+        <label for="cuit">Cuit
+          <div>
+            <input type="text" id="cuit" name="tipo.global" placeholder="20">
+            <input type="text" name="doc" placeholder="39987654" maxlength="9" minlength="8">
+            <input type="text" placeholder="7" name="dig.verificador" maxlength="1" minlength="1">
+          </div>
+        </label>
+
+        <label for="Email">Correo
+          <input type="text" placeholder="Ej: ejemplo@dominio.com" id="Email" name="mail">
+        </label>
+
+
+        <label for="Telefono">Telefono Fijo
+          <div>
+            <input type="text" placeholder="Ej: 054" id="telefono" name="prefijo" maxlength="3" minlength="3">
+            <input id="tel" type="text" placeholder="42245656" name="telefono-fijo" maxlength="8" minlength="8">
+          </div>
+        </label>
+      </div>
+
+      <!---------- Cuarta sección ---------->
+      <div class="ce-adj-in">
+        <label for="caracteristica">Celular
+          <div><input type="text" placeholder="Ej:011" id="caracteristica" name="celular" minlength="8" maxlength="8">
+            <input type="text" name="celular" minlength="8" maxlength="8" placeholder="Ej:23569747">
+          </div>
+        </label>
+
+        <label for="">Adjuntar archivo
+          <input type="file">
+        </label>
+
+        <label for="in-tele">Fecha inicio Teletrabajo
+          <input type="date" id="in-tele">
+        </label>
+      </div>
+
+      <!---------- Comentario ---------->
+
+      <div class="comentario">
+        <label for="coment">Comentario</label>
+        <textarea id="coment" name="text-comentario"></textarea>
+      </div>
+
+      <!---------- Boton enviar ---------->
+      <div>
+        <input id="enviar" type="submit" value="Enviar">
+      </div>
+    </form>
+  </main>
+
+</body>
+
+</html>
